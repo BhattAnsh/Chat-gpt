@@ -16,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="bg-black">
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"></link>
       <body className="dark h-screen backdrop-blur-md bg-black">
         <Providers>{children}</Providers>
