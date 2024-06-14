@@ -1,11 +1,13 @@
 // app/page.tsx
 import {Button} from '@nextui-org/button'; 
 import NavBar from './Components/navbar';
-import { BackgroundGradientAnimationDemo } from './Components/bg';
+import { LandingPage } from './Components/landingPage';
 export default function Page() {
   return (
-    <div>
-      <BackgroundGradientAnimationDemo></BackgroundGradientAnimationDemo>
-    </div>
+    <>
+      <div>
+        <LandingPage></LandingPage>
+      </div>
+    </>
   )
 }

@@ -12,8 +12,7 @@ import {
   Button,
 } from "@nextui-org/react";
 import { HoveredLink, Menu, MenuItem, ProductItem } from "./ui/navbar-menu";
-import { AcmeLogo } from "./AcmeLogo.tsx";
-
+import { AcmeLogo } from "./AcmeLogo";
 export default function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const [active, setActive] = React.useState(null);
@@ -30,13 +29,12 @@ export default function NavBar() {
     "Help & Feedback",
     "Log Out",
   ];
-
   return (
     <Navbar
       isMenuOpen={isMenuOpen}
       onMenuOpenChange={setIsMenuOpen}
-      shouldHideOnScroll
       maxWidth="full"
+      position = "sticky"
       isBlurred = "false"
       className="flex w-full justify-evenly align-center flex-row w-screen bg-[#0000]"
     >

@@ -14,5 +14,4 @@ const PrimaryButton: React.FC<PrimaryButtonProps> = ({ text }) => {
     </Button>
   )
 }
-
 export default PrimaryButton;
