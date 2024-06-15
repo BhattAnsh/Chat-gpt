@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Button } from "@nextui-org/react";
+import Styles from "../styles/hero.module.css"
 
 let interval: any;
 
@@ -32,21 +33,25 @@ export const CardStackMenu = ({
         return (
           <motion.div
             key={card.id}
-            className="absolute dark:bg-black bg-white h-60 w-60 md:h-[65vh] md:w-[70vw] rounded-3xl p-10 shadow-xl border border-neutral-200 dark:border-[#8F78F1]/[0.3]  shadow-[#8F78F1]/[0.1] dark:shadow-[#8F78F1]/[0.15] flex flex-col justify-between"
+            className={`absolute dark:bg-black bg-white h-[max-height] w-[90vw] md:h-[65vh] md:w-[70vw] rounded-3xl p-10 shadow-xl border border-neutral-200 dark:border-[#8F78F1]/[0.3]  shadow-[#8F78F1]/[0.1] dark:shadow-[#8F78F1]/[0.15] flex flex-col justify-between bg-purple-400 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-gray-100
+`}
             style={{
               transformOrigin: "top center",
             }}
             animate={{
               top: index * -CARD_OFFSET,
-              scale: 1 - index * SCALE_FACTOR, // decrease scale for cards that are behind
-              zIndex: cards.length - index, //  decrease z-index for the cards that are behind
+              scale: 1 - index * SCALE_FACTOR,
+              zIndex: cards.length - index,
             }}
           > 
-            <Button className="w-[200px] bg-[transparent] border border-[1px] border-[#8F78F1] shadow-[#8F78F1]/[0.15]">Our Misson</Button>
-            <h1 className="font-bolder text-7xl w-[60%]">Creating a better & more accessible web design for everyone.</h1>
+            <Button className="w-[min-content] lg:w-[200px] bg-[transparent] border border-[1px] border-[#8F78F1] shadow-[#8F78F1]/[0.15]">Our Misson</Button>
+            <br className="lg:none" />
+            <h1 className="font-bolder text-2xl lg:text-7xl w-[100%] lg:w-[60%]">Creating a better & more accessible web design for everyone.</h1>
+            <br className="lg:none" />
             <div className="font-normal text-neutral-700 dark:text-neutral-200">
               {card.content}
             </div>
+            <br className="lg:none" />
             <div>
               <p className="text-neutral-500 font-medium dark:text-white">
                 {card.name}
@@ -58,6 +63,7 @@ export const CardStackMenu = ({
           </motion.div>
         );
       })}
+      <div className={Styles.bgGrad}></div>
     </div>
   );
 };

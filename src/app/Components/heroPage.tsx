@@ -28,18 +28,20 @@ function HeroPage() {
           <br />
         </div>
       </center>
-      <div className="flex flex-row items-center justify-center gap-5">
-        <Button className="text-lg" variant="faded">
-          APP SUMO
-        </Button>
-        <div className="flex flex-col justify-center items-center">
-          <span className="text-lg">Rated 4.9</span>
-          <div className="flex flex-row items-center justify-center gap-2">
-            <Image src="/kid_start.svg" width={15} height={15} alt="" />
-            <Image src="/kid_start.svg" width={15} height={15} alt="" />
-            <Image src="/kid_start.svg" width={15} height={15} alt="" />
-            <Image src="/kid_start.svg" width={15} height={15} alt="" />
-            <Image src="/kid_start.svg" width={15} height={15} alt="" />
+      <div className="flex flex-col lg:flex-row items-center justify-center gap-5">
+        <div className="flex flex-row items-center justify-center gap-5">
+          <Button className="text-lg" variant="faded">
+            APP SUMO
+          </Button>
+          <div className="flex flex-col justify-center items-center">
+            <span className="text-lg">Rated 4.9</span>
+            <div className="flex flex-row items-center justify-center gap-2">
+              <Image src="/kid_start.svg" width={15} height={15} alt="" />
+              <Image src="/kid_start.svg" width={15} height={15} alt="" />
+              <Image src="/kid_start.svg" width={15} height={15} alt="" />
+              <Image src="/kid_start.svg" width={15} height={15} alt="" />
+              <Image src="/kid_start.svg" width={15} height={15} alt="" />
+            </div>
           </div>
         </div>
         <div className="flex flex-row items-center justify-center">
