@@ -10,6 +10,8 @@ import Styles from "./styles/hero.module.css";
 import Card from "./ui/card";
 import PrimaryButton from "./ui/primaryButton";
 import Testimonial from "./ui/testimonial";
+import Footer from "./ui/footer";
+
 export function LandingPage() {
   return (
     <>
@@ -114,7 +116,9 @@ export function LandingPage() {
             <Testimonial></Testimonial>
           </div>
         </div>
-
+        <div className="w-full flex justify-center align-center mt-[100px]">
+          <Footer></Footer>
+        </div>
         <br />
       </div>
     </>
