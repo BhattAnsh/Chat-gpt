@@ -9,7 +9,7 @@ import Image from "next/image";
 import Styles from "./styles/hero.module.css";
 import Card from "./ui/card";
 import PrimaryButton from "./ui/primaryButton";
-
+import Testimonial from "./ui/testimonial";
 export function LandingPage() {
   return (
     <>
@@ -99,6 +99,21 @@ export function LandingPage() {
             <Card></Card>
           </section>
         </center>
+        <div className="flex flex-col items-center justify-center mt-[100px]">
+          <Image
+            src="/commentsSVG.svg"
+            alt=""
+            width={600}
+            height={600}
+            className=""
+          />
+          <div className="heading">
+            <h1 className=" text-5xl md:text-7xl font-bold text-center mt-50px md:mt-20px w-[90vw] md:w-[40vw] leading-snug">What community says about us</h1>
+          </div>
+          <div className="flex items-center justify-center w-full mt-[100px]">
+            <Testimonial></Testimonial>
+          </div>
+        </div>
 
         <br />
       </div>
