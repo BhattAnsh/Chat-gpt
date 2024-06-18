@@ -11,6 +11,7 @@ import Card from "./ui/card";
 import PrimaryButton from "./ui/primaryButton";
 import Testimonial from "./ui/testimonial";
 import Footer from "./ui/footer";
+import Accordion from "./accordion";
 
 export function LandingPage() {
   return (
@@ -63,12 +64,44 @@ export function LandingPage() {
         </div>
         <div className="flex flex-col items-center justify-center mt-[100px]">
           <Image
+            src="/lightSVG.svg"
+            alt=""
+            width={600}
+            height={600}
+            className=""
+          />
+          <div className="flex flex-col items-center justify-center">
+            <h1 className="text-[40px] lg:text-[70px] w-[90vw] lg:w-[60vw] text-center font-bold leading-tight">
+              One platform - all solutions
+            </h1>
+            <br />
+            <h4 className="w-[90vw] lg:w-[50vw] text-[gray] text-center">
+              Divhunt is made for all, from personal tasks to big business
+              needs. Turn your ideas into reality easily. It’s direct, flexible,
+              and ready for any project.
+            </h4>
+          </div>
+          <Accordion></Accordion>
+        </div>
+        <div className="flex flex-col items-center justify-center mt-[100px]">
+          <Image
             src="/speedSVG.svg"
             alt=""
             width={600}
             height={600}
             className=""
           />
+          <div className="flex flex-col items-center justify-center">
+            <h1 className="text-[40px] lg:text-[70px] w-[90vw] lg:w-[60vw] text-center font-bold leading-tight">
+              Truly unlimited no-code tool with features that matter
+            </h1>
+            <br />
+            <h4 className="w-[90vw] lg:w-[50vw] text-[gray] text-center">
+              We’re not just focused on building features - we’re focused on
+              removing the barriers so you can do whatever you want, however you
+              want. If it can be coded, it can be built in Divhunt.
+            </h4>
+          </div>
           <SpeedTabs></SpeedTabs>
         </div>
         <section id="horizon-section" className={Styles.t2242}>
@@ -78,10 +111,7 @@ export function LandingPage() {
               <div className={Styles.t2246}></div>
             </div>
             <div className={Styles.t2250}></div>
-            <div
-              id="horizon-div"
-              className={Styles.t2247}
-            >
+            <div id="horizon-div" className={Styles.t2247}>
               <div className={Styles.t2249}></div>
               <div className={Styles.t2248}></div>
             </div>
@@ -91,11 +121,18 @@ export function LandingPage() {
           <section className="mt-[300px] md:mt-[400px]">
             <div className="heading flex flex-col gap-10 md:gap-0 md:flex-row w-[100vw] md:w-[70vw] m-[10px] p-[10px] md:m-[100px] relative z-[100]">
               <div className="flex flex-col w-[100%] md:w-[50%] gap-10">
-                <h1 className="text-center md:text-start text-5xl font-[600]">Everything you need to get started</h1>
-                <p className="text-center md:text-start text-[gray]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores inventore, minus blanditiis eum aut tempore iure ex beatae voluptate voluptatibus. Et hic molestiae excepturi distinctio. Recusandae saepe maxime illum cumque?</p>
+                <h1 className="text-center md:text-start text-5xl font-[600]">
+                  Everything you need to get started
+                </h1>
+                <p className="text-center md:text-start text-[gray]">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Asperiores inventore, minus blanditiis eum aut tempore iure ex
+                  beatae voluptate voluptatibus. Et hic molestiae excepturi
+                  distinctio. Recusandae saepe maxime illum cumque?
+                </p>
               </div>
               <div className="flex flex-col justify-end items-center md:items-end w-[100%] md:w-[50%]">
-                <PrimaryButton text="Get Started Free"></PrimaryButton>
+                <PrimaryButton url="#" text="Get Started Free"></PrimaryButton>
               </div>
             </div>
             <Card></Card>
@@ -110,7 +147,9 @@ export function LandingPage() {
             className=""
           />
           <div className="heading">
-            <h1 className=" text-5xl md:text-7xl font-bold text-center mt-50px md:mt-20px w-[90vw] md:w-[40vw] leading-snug">What community says about us</h1>
+            <h1 className=" text-5xl md:text-7xl font-bold text-center mt-50px md:mt-20px w-[90vw] md:w-[40vw] leading-snug">
+              What community says about us
+            </h1>
           </div>
           <div className="flex items-center justify-center w-full mt-[100px]">
             <Testimonial></Testimonial>

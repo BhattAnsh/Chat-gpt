@@ -1,6 +1,6 @@
 "use client";
 import { CardStackMenu } from "./ui/card-stack";
-import { cn } from "../lib/utils";
+import { cn } from "@/lib/utils";
 export function CardStack() {
   return (
     <div className="h-[40rem] flex items-center justify-center w-full">

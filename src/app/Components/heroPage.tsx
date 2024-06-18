@@ -19,7 +19,7 @@ function HeroPage() {
             Visually create, publish, and scale the highest performance
             websites, without any limits.
           </p>
-          <PrimaryButton text="Create Your GPT"></PrimaryButton>
+          <PrimaryButton url="#" text="Create Your GPT"></PrimaryButton>
         </div>
       </div>
       <center>
