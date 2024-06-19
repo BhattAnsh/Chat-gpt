@@ -16,7 +16,7 @@ const Footer = () => {
             Upgrade anytime for expanded limits
           </h3>
           <br />
-          <PrimaryButton text="Build For free"></PrimaryButton>
+          <PrimaryButton url="#" text="Build For free"></PrimaryButton>
           <br />
         </div>
         <div></div>
