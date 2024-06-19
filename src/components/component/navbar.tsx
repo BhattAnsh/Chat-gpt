@@ -128,8 +128,12 @@ export function Navbar() {
     </header>
   )
 }
+interface IconProps {
+  className?: string;
+  // Add any other specific props if needed
+}
 
-function BriefcaseIcon(props) {
+function BriefcaseIcon(props:IconProps) {
   return (
     <svg
       {...props}
@@ -150,7 +154,7 @@ function BriefcaseIcon(props) {
 }
 
 
-function DollarSignIcon(props) {
+function DollarSignIcon(props:IconProps) {
   return (
     <svg
       {...props}
@@ -171,7 +175,7 @@ function DollarSignIcon(props) {
 }
 
 
-function HomeIcon(props) {
+function HomeIcon(props:IconProps) {
   return (
     <svg
       {...props}
@@ -192,7 +196,7 @@ function HomeIcon(props) {
 }
 
 
-function MailIcon(props) {
+function MailIcon(props:IconProps) {
   return (
     <svg
       {...props}
@@ -213,7 +217,7 @@ function MailIcon(props) {
 }
 
 
-function MenuIcon(props) {
+function MenuIcon(props:IconProps) {
   return (
     <svg
       {...props}
@@ -235,7 +239,7 @@ function MenuIcon(props) {
 }
 
 
-function MountainIcon(props) {
+function MountainIcon(props:IconProps) {
   return (
     <svg
       {...props}
@@ -255,7 +259,7 @@ function MountainIcon(props) {
 }
 
 
-function UserIcon(props) {
+function UserIcon(props:IconProps) {
   return (
     <svg
       {...props}
