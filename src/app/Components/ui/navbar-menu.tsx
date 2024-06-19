@@ -19,7 +19,7 @@ export const MenuItem = ({
   item,
   children,
 }: {
-  setActive: (item: string) => void;
+  setActive: (item: any) => void;
   active: string | null;
   item: string;
   children?: React.ReactNode;
@@ -64,7 +64,7 @@ export const Menu = ({
   setActive,
   children,
 }: {
-  setActive: (item: string | null) => void;
+  setActive: (item: any) => void;
   children: React.ReactNode;
 }) => {
   return (

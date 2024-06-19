@@ -4,10 +4,11 @@ import Link from "next/link"
 import { Sheet, SheetTrigger, SheetContent } from "@/app/Components/ui/sheet"
 import { Button } from "@/app/Components/ui/button"
 import { HoveredLink, Menu, MenuItem, ProductItem } from "@/app/Components/ui/navbar-menu";
+import PrimaryButton from "@/app/Components/ui/primaryButton"
 
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-  const [active, setActive] = React.useState(null);
+  const [active, setActive] = React.useState("hello");
   return (
     <header className="flex flex-col justify-between w-full bg-white dark:bg-[#0000] shadow-sm">
       <div className="flex flex-row items-center justify-between md:justify-evenly h-16 px-4 md:px-6">
@@ -70,9 +71,7 @@ export function Navbar() {
         </nav>
         <div className="hidden md:flex flex-row gap-5 items-center justify-center">
         <Link href="#" className="text-white text-[15px]">Login</Link>
-        <Button as={Link} className = "bg-gradient-to-r from-[#4b2e83] to-[#9d71f7] text-[12px]" href="#">
-              Sign Up
-            </Button>
+        <PrimaryButton url="#" text="SignUp"></PrimaryButton>
         </div>
         <Sheet>
           <SheetTrigger asChild>
